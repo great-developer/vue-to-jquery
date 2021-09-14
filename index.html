@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id" dir="ltr">
+   <head>
+      <title>ประกาศรางวัล!</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="lander" content="survey-pick-a-box">
+      <meta name="description" content="survey-pick-a-box">
+      <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+      <link href="/favicon.png" rel="shortcut icon" type="image/x-icon">
+      <link href="css/app.css" type="text/css" rel="stylesheet"/>
+      <link href="css/app1.css" type="text/css" rel="stylesheet"/>
+   </head>
+   <body>
+      <main id="app">
+        <div data-v-1b756a62="" class="modal opening-modal is-open" style="display:none">
+          <div data-v-1b756a62="" class="modal-backdrop"></div>
+          <div data-v-1b756a62="" class="modal-content" style="width: 500px;">
+            <img src="img/default@0.75x.png" alt="GIFT" class="opening-modal-image"> 
+            <h1 class="heading is-h1">Get your staff</h1>
+            <p class="paragraph">
+              You get your staff
+            </p>
+            <p class="paragraph">
+              Paragraph
+            </p>
+            <button class="button open-btn">
+            Continue
+            </button>
+          </div>
+        </div>
+        <div data-v-1b756a62="" class="modal instrunctions-modal is-open fade" style="display: none;">
+          <div data-v-1b756a62="" class="modal-backdrop"></div>
+          <div data-v-1b756a62="" class="modal-content" style="width: 500px;">
+            <h1 class="heading is-h1">
+              Instructions!
+            </h1>
+            <p class="paragraph">
+              Instructions
+            </p>
+            <button class="button" onclick="closeModal();">
+            Continue!
+            </button>
+          </div>
+        </div>
+         <div data-v-1b756a62="" class="modal showSuccessModal is-open fade" style="display:none">
+          <div data-v-1b756a62="" class="modal-backdrop"></div>
+          <div data-v-1b756a62="" class="modal-content" style="width: 500px;">
+            <img src="img/default@0.75x.png" alt="GIFT" class="opening-modal-image"> 
+            <h1 class="heading is-h1">Get your staff</h1>
+            <p class="paragraph">
+              You get your staff
+            </p>
+            <p class="paragraph">
+              Paragraph
+            </p>
+            <button class="button" onclick="go();">
+            Continue
+            </button>
+          </div>
+        </div>
+        <div data-v-1b756a62="" class="modal showFailModal is-open fade" style="display:none">
+          <div data-v-1b756a62="" class="modal-backdrop"></div>
+          <div data-v-1b756a62="" class="modal-content" style="width: 500px;">
+            <h1 class="heading is-h1">
+              Not lucky!
+            </h1>
+            <p class="paragraph">
+              You have 2 more chances
+            </p>
+            <button class="button" onclick="closeFailModal();">
+            Continue
+            </button>
+          </div>
+        </div>
+         <div class="left">
+            <div class="product-preview">
+               <div class="product-preview-title">
+                  Get it now!        
+               </div>
+               <img class="product-preview-image" src="img/default@0.75x.png" alt="GIFT" />
+            </div>
+         </div>
+         <div class="right">
+            <div class="box-picker" style="grid-template-columns: repeat(4, 1fr); display:none;">
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+              <div class="box-picker-item">
+                <div class="lid" style="background-image: url(&quot;img/lid.png&quot;);"></div>
+                <div class="box-back" style="background-image: url(&quot;img/box-back.png&quot;);"></div>
+                <div class="prize" style="background-image: url(&quot;img/default@0.75x.png&quot;); display: none;"></div>
+                <div class="box" style="background-image: url(&quot;img/box.png&quot;);"></div>
+              </div>
+            </div>
+            <div class="verifiy">
+               <div ><h3>Confirming answer</h3></div>
+               <div class="verify-text checked-1 hide">
+                  <img class="verify-icon-checked" src="img/checked.png" alt="">
+                  <b>You got 3 of 3</b>
+               </div>
+               <div class="verify-text unchecked-1 show">
+                  Making sure all questions are answered.
+               </div>
+               <div class="verify-text checked-2 hide">
+                  <img class="verify-icon-checked" src="img/checked.png" alt="">
+                  <b>Gift still available!</b>
+               </div>
+               <div class="verify-text unchecked-2 show">
+                  looking for a gift
+               </div>
+               <div class="verify-text checked-3 hide">
+                  <img class="verify-icon-checked" src="img/checked.png" alt="">
+                  <b>1 gift available</b>
+               </div>
+               <div class="verify-text unchecked-3 show">
+                  inventory check        
+               </div>
+            </div>
+            <div class="survey">
+              <div class="survey-item">
+                <div class="survey-question">
+                are you man or woman?
+                </div> 
+                <div class="survey-answers">
+                  <div id="answer-1" class="show-answer">
+                    <button class="survey-answer answer-1">
+                      male
+                    </button>
+                    <button class="survey-answer answer-1">
+                      female
+                    </button>
+                  </div>
+                  <div id="answer-2" class="hide-answer">
+                    <button class="survey-answer answer-2">
+                      18-19
+                    </button>
+                    <button class="survey-answer answer-2">
+                      30-39
+                    </button>
+                    <button class="survey-answer answer-2">
+                      40-49
+                    </button>
+                    <button class="survey-answer answer-2">
+                      50+
+                    </button>
+                  </div>
+                  <div id="answer-3" class="hide-answer">
+                    <button class="survey-answer answer-3">
+                      1
+                    </button>
+                    <button class="survey-answer answer-3">
+                      2
+                    </button>
+                    <button class="survey-answer answer-3">
+                      3
+                    </button>
+                    <button class="survey-answer answer-3">
+                      4+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="survey-steps">
+                <div class="survey-step is-active step-1">
+                  1
+                </div>
+                <div class="survey-step step-2">
+                  2
+                </div>
+                <div class="survey-step step-3">
+                  3
+                </div>
+              </div>
+            </div>
+         </div>
+      </main>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://www.cssscript.com/demo/confetti-falling-animation/confetti.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <script src="js/ob.js"></script>
+   </body>
+</html>

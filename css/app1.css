@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+html {
+	height: 100%
+}
+body {
+	min-height: 100%;
+	margin: 0;
+	background: #000;
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 13px;
+	text-align: center
+}
+main {
+	display: -webkit-box;
+	display: flex;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding: 20px
+}
+main .left,
+main .right {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 20px
+}
+@media (max-width:640px) {
+	main {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column
+	}
+	main .left,
+	main .right {
+		width: 100%;
+		max-width: none;
+		margin: 0
+	}
+}
+.product-preview .product-preview-title {
+	font-family: Pacifico, sans-serif;
+	font-size: 36px
+}
+.product-preview .product-preview-image {
+	width: 100%;
+	max-width: 250px
+}
+.survey {
+	position: relative;
+	max-width: none;
+	padding: 40px;
+	background: #eaeaea;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center
+}
+.survey .survey-question {
+	color: #000
+}
+.survey .survey-answer {
+	display: block;
+	width: 100%;
+	margin-top: 15px;
+	padding: 19px 20px;
+	border-radius: 0;
+	border: 1px solid #000;
+	background: #0084ff;
+	box-shadow: none;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 28px;
+	text-decoration: none;
+	cursor: pointer
+}
+.survey .survey-steps {
+	margin-top: 20px
+}
+.survey .survey-steps .survey-step {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: #fff;
+	font-size: 0
+}
+.survey .survey-steps .survey-step.is-active {
+	background: #0084ff
+}
+@media (max-width:640px) {
+	.survey {
+		padding: 20px
+	}
+	.survey .survey-answer {
+		padding: 10px;
+		font-size: 20px;
+		line-height: 18px
+	}
+}
+.modal {
+	z-index: 6;
+	color: #000
+}
+.modal .modal-content {
+	padding: 20px;
+	background-color: #ffff
+}
+.opening-modal .opening-modal-image {
+	width: 100%;
+	max-width: 200px
+}
+.button {
+	display: inline-block;
+	padding: .375rem .75rem;
+	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	border: none;
+	border-radius: .25rem;
+	background-color: #f75102;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-decoration: none;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.button,
+.verifiy {
+	text-align: center
+}
+.verifiy {
+	padding: 40px;
+	background: #eaeaea;
+	color: #000
+}
+.verifiy .text-rotator {
+	margin-bottom: 10px;
+	font-size: 21px
+}
+.verifiy .verify-text {
+	padding: 2px 0
+}
+.verifiy .verify-icon-checked,
+.verifiy .verify-icon-spinner {
+	max-width: 13px
+}
+.verifiy .verify-icon-spinner {
+	opacity: 0
+}
+.verifiy .verify-icon-spinner.is-visible {
+	opacity: 1
+}
+
+canvas {
+	z-index: 1 !important;
+}

@@ -1,0 +1,155 @@
+.is-hidden,
+[v-cloak] {
+	display: none
+}
+
+.is-strong {
+	font-weight: 700
+}
+
+.is-italic {
+	font-style: italic
+}
+
+.is-capitalized {
+	text-transform: uppercase
+}
+
+.is-lowercase {
+	text-transform: lowercase
+}
+
+.is-uppercase {
+	text-transform: uppercase
+}
+
+.has-text-centered {
+	text-align: center
+}
+
+.has-text-left {
+	text-align: start
+}
+
+.has-text-right {
+	text-align: end
+}
+.show-answer, .show {
+	display: block;
+}
+
+.hide-answer, .hide {
+	display: none;
+}
+
+.modal.is-open[data-v-1b756a62] {
+    pointer-events: auto;
+}
+
+.modal[data-v-1b756a62] {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    overflow: auto;
+    pointer-events: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-backdrop[data-v-1b756a62] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content[data-v-1b756a62] {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 50px rgb(0 0 0 / 25%);
+}
+
+.box-picker {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+    background-color: #3c3c3c;
+}
+
+.box-picker .box-picker-item {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.box-picker .box-picker-item .lid {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+}
+
+.box-picker .box-picker-item .box-back {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.box-picker .box-picker-item .prize {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    background-size: cover;
+}
+
+.box-picker .box-picker-item .box {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+canvas  {
+    display: block;
+    position: fixed;
+    pointer-events: none;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+}
